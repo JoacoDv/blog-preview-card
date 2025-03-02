@@ -10,7 +10,7 @@ body {
     margin: 0; 
     padding: 0; 
     background-color: hsl(47, 88%, 63%) ; 
-    font-size: 14px; 
+    font-size: 16px; 
     font-family: Figtree;
 }
 
@@ -18,8 +18,10 @@ body {
     border-radius: 16px; 
     background-color: hsl(0, 0%, 100%); 
     margin: 180px auto; 
-    width: 320px; 
+    width: 380px; 
     text-align: center; 
+    border: 1px solid #000;
+    box-shadow: 10px 10px #000;
 }
 
 .yellow {
@@ -27,7 +29,7 @@ body {
     height: 20px; 
     padding: 2px; 
     width: 80px; 
-    margin: 0px 15px;    
+    margin: 0px 20px;    
     display: flex; 
     align-items: center;
     justify-content: center;
@@ -53,18 +55,22 @@ img {
 
 h1, p {
     text-align: left; 
-    margin-left: 15px;
+    margin-left: 20px;
+}
+
+h1 { 
+    font-size: 1.5rem;
 }
 
 .author {
     display: flex;
     align-items: center; /* Alinea verticalmente */
     gap: 10px; /* Espacio entre la imagen y el texto */
-    margin: 0 0 15px 10px; /* Alinear con el resto del contenido */
+    margin: 0 0 15px 15px; /* Alinear con el resto del contenido */
 }
 
 .avatar{
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     width: 36px; 
     height: 36px; 
     text-align: left; 
