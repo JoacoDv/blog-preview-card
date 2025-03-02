@@ -1,0 +1,72 @@
+.figtree-<uniquifier> { 
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0; 
+    background-color: hsl(47, 88%, 63%) ; 
+    font-size: 14px; 
+    font-family: Figtree;
+}
+
+.container { 
+    border-radius: 16px; 
+    background-color: hsl(0, 0%, 100%); 
+    margin: 180px auto; 
+    width: 320px; 
+    text-align: center; 
+}
+
+.yellow {
+    background: hsl(47, 88%, 63%); 
+    height: 20px; 
+    padding: 2px; 
+    width: 80px; 
+    margin: 0px 15px;    
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.yellow p {
+    margin: 0;
+}
+
+.gray-strong {
+    color: hsl(0, 0%, 7%) ;
+}
+
+.gray {
+    color: hsl(0, 0%, 42%) ;
+}
+
+img {
+    width: 90%; 
+    margin: 15px 5px; 
+    border-radius: 16px; 
+}
+
+h1, p {
+    text-align: left; 
+    margin-left: 15px;
+}
+
+.author {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    gap: 10px; /* Espacio entre la imagen y el texto */
+    margin: 0 0 15px 10px; /* Alinear con el resto del contenido */
+}
+
+.avatar{
+    margin-bottom: 15px;
+    width: 36px; 
+    height: 36px; 
+    text-align: left; 
+    display: inline;
+}
