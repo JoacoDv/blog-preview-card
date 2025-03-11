@@ -19,7 +19,7 @@
   
   <div class="container">
 
-    <img src="./assets/images/illustration-article.svg" alt="portada">
+    <img id="image" src="./assets/images/illustration-article.svg" alt="portada">
     
     <div class="yellow" ><p ><strong>Learning</strong></p></div>
 
@@ -35,5 +35,26 @@
     </div>
   
   </div>
+
+  <script type="module">
+    import { animate, scroll } from "https://cdn.jsdelivr.net/npm/motion@latest/+esm"
+    const container = document.querySelector(".container")
+    const image = document.getElementById("image")
+    const yellow = document.querySelector(".yellow")
+    const grayText = document.querySelector(".gray-strong")
+    const title = document.querySelector("h1")
+    const text = document.querySelector(".gray")
+    const author = document.querySelector(".author")
+
+    animate(container, {y: [-100, 0]}, {ease: "easeOut", duration: .4})
+    animate(image, {scale: [0.4, 1], opacity: [0,1]}, {ease: "easeOut", duration: .4, delay: .4})
+    animate(yellow, {y: [-20, 0], opacity: [0,1]}, {ease: "easeOut", duration: .3, delay: .8})
+    animate(grayText, {y: [-30, 0], opacity: [0,1]}, {ease: "easeOut", duration: .2, delay: 1.1})
+    animate(title, {x: [-30, 0], opacity: [0,1]}, {ease: "easeOut", duration: .2, delay: 1.3})
+    animate(text, {x: [30, 0], opacity: [0,1]}, {ease: "easeOut", duration: .2, delay:1.3})
+    animate(author, {y: [50, 0], opacity: [0,1]}, {ease: "easeOut", duration: .3, delay: 1.5})
+
+  </script>
+
 </body>
 </html>
